@@ -59,7 +59,7 @@ const timeline: {
     size: 'minimized',
     date: '2022',
     title:
-      'Started Master of Computer Science at UET Lahore (Data Science)',
+      'Started Master of Computer Science at UET Lahore (Machine Learning)',
   },
   {
     size: 'main',

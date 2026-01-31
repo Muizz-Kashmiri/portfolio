@@ -7,6 +7,7 @@ import {
 } from 'react-icons/si';
 import {
   TbBrandAws,
+  TbBrandAzure,
   TbBrandDocker,
   TbBrandOpenai,
   TbBrandPython,
@@ -40,6 +41,10 @@ export const techUsed = [
   {
     title: 'AWS',
     Icon: TbBrandAws,
+  },
+  {
+    title: 'Azure',
+    Icon: TbBrandAzure,
   },
   {
     title: 'Docker',

@@ -1,7 +1,10 @@
 import { AiFillGithub } from 'react-icons/ai';
 import { GoBook } from 'react-icons/go';
 import { GrLinkedinOption } from 'react-icons/gr';
-import { HiOutlineDocumentText } from 'react-icons/hi';
+import {
+  HiOutlineDocumentDownload,
+  HiOutlineDocumentText,
+} from 'react-icons/hi';
 
 import { Link } from './link';
 
@@ -35,6 +38,13 @@ export const Navigation = () => {
         href="https://www.linkedin.com/in/muizzbutt79/"
         external
         leftIcon={<GrLinkedinOption />}
+        variant="icon-button"
+      />
+
+      <Link
+        href="/Muizz_Butt_Resume.pdf"
+        external
+        leftIcon={<HiOutlineDocumentDownload />}
         variant="icon-button"
       />
     </div>

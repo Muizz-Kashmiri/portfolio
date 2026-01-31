@@ -5,7 +5,10 @@ import { BiMap } from 'react-icons/bi';
 import { FaBrain, FaChess } from 'react-icons/fa';
 import { GoBook } from 'react-icons/go';
 import { GrLinkedinOption } from 'react-icons/gr';
-import { HiOutlineDocumentText } from 'react-icons/hi';
+import {
+  HiOutlineDocumentDownload,
+  HiOutlineDocumentText,
+} from 'react-icons/hi';
 import { useIntersection } from 'react-use';
 
 import { Link } from '@/components/link';
@@ -94,6 +97,13 @@ export const ProfileBanner = () => {
               href="https://www.linkedin.com/in/muizzbutt79/"
               external
               leftIcon={<GrLinkedinOption />}
+              variant="icon-button"
+            />
+
+            <Link
+              href="/Muizz_Butt_Resume.pdf"
+              external
+              leftIcon={<HiOutlineDocumentDownload />}
               variant="icon-button"
             />
           </div>
