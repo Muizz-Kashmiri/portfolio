@@ -37,7 +37,7 @@ const timeline: {
     size: 'minimized',
     date: '2024',
     title:
-      'Completed Master of Computer Science from UET Lahore',
+      'Completed Master of Computer Science from UET Lahore. CGPA: 3.5/4.0 (Bronze Medalist)',
   },
   {
     size: 'main',
@@ -90,7 +90,7 @@ const timeline: {
     title:
       'Started Bachelor of Information Technology at University of Punjab',
     description:
-      'Studied at the University of Punjab, Lahore. GPA: 3.5/4.0',
+      'Studied at the University of Punjab, Lahore. CGPA: 3.5/4.0',
     tags: [
       'Java',
       'Algorithms',

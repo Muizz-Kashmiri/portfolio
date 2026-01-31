@@ -44,14 +44,13 @@ export const ProfileBanner = () => {
       <div className="flex flex-col gap-4 px-4">
         <div
           className={clsx(
-            'flex w-full flex-col-reverse items-start justify-between gap-7 pb-5 ',
-            'sm:flex-row sm:gap-0'
+            'flex w-full flex-col-reverse items-start gap-7 pb-5 '
           )}
         >
-          <div className="flex items-center space-x-4">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4">
             <ProfileImage />
             <h1 className="flex flex-col gap-1">
-              <span className="text-3xl font-bold">
+              <span className="whitespace-nowrap text-3xl font-bold">
                 Muizz Elahi Butt
               </span>
               <code className="font-mono text-base font-medium">
@@ -62,8 +61,7 @@ export const ProfileBanner = () => {
 
           <div
             className={clsx(
-              'flex items-center space-x-3 self-end text-sm font-bold',
-              'sm:-mt-16 sm:self-auto'
+              'flex items-center space-x-3 self-end text-sm font-bold'
             )}
           >
             <Link
@@ -115,8 +113,7 @@ export const ProfileBanner = () => {
           about RAG systems, MLOps, and scalable architectures.
         </p>
         <p className="text-base">
-          Currently working with LangChain, Django, and AWS.
-          Experienced in Flutter and full-stack development.
+          Currently working with Agentic workflows, LangChain, Django, Azure, and AWS.
         </p>
 
         <div
