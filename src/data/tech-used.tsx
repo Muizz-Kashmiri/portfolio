@@ -1,56 +1,52 @@
-import { IoLogoNodejs } from 'react-icons/io5';
-import { SiNestjs } from 'react-icons/si';
 import {
-  TbBrandTypescript,
-  TbBrandNextjs,
-  TbBrandReact,
-  TbBrandTailwind,
-  TbBrandReactNative,
-  TbBrandPrisma,
-  TbBrandGit,
+  SiDjango,
+  SiFlutter,
+  SiKubernetes,
+  SiPytorch,
+  SiTensorflow,
+} from 'react-icons/si';
+import {
+  TbBrandAws,
   TbBrandDocker,
+  TbBrandOpenai,
+  TbBrandPython,
 } from 'react-icons/tb';
 
 export const techUsed = [
   {
-    title: 'React',
-    Icon: TbBrandReact,
+    title: 'Python',
+    Icon: TbBrandPython,
   },
   {
-    title: 'Next.js',
-    Icon: TbBrandNextjs,
+    title: 'Django',
+    Icon: SiDjango,
   },
   {
-    title: 'TypeScript',
-    Icon: TbBrandTypescript,
+    title: 'LangChain',
+    Icon: TbBrandOpenai,
   },
   {
-    title: 'TailwindCSS',
-    Icon: TbBrandTailwind,
+    title: 'TensorFlow',
+    Icon: SiTensorflow,
   },
   {
-    title: 'React Native',
-    Icon: TbBrandReactNative,
+    title: 'PyTorch',
+    Icon: SiPytorch,
   },
   {
-    title: 'Node.js',
-    Icon: IoLogoNodejs,
+    title: 'Flutter',
+    Icon: SiFlutter,
   },
   {
-    title: 'Prisma',
-    Icon: TbBrandPrisma,
-  },
-  {
-    title: 'NestJS',
-    Icon: SiNestjs,
-  },
-  {
-    title: 'Git',
-
-    Icon: TbBrandGit,
+    title: 'AWS',
+    Icon: TbBrandAws,
   },
   {
     title: 'Docker',
     Icon: TbBrandDocker,
+  },
+  {
+    title: 'Kubernetes',
+    Icon: SiKubernetes,
   },
 ];

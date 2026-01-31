@@ -3,19 +3,15 @@ import Head from 'next/head';
 // !STARTERCONF Change these default meta
 const defaultMeta = {
   title:
-    'Henrique Gonçalves - Healthily obsessed with designing and coding awesome stuff.',
-  siteName: 'Henrique Gonçalves',
+    'Muizz Elahi Butt - ML/AI Engineer building intelligent systems.',
+  siteName: 'Muizz Elahi Butt',
   description:
-    'Healthily obsessed with designing and coding awesome stuff.',
-  /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
-  url: 'https://henriqgoncalvs.com',
+    'ML/AI Engineer building intelligent systems with Python, LLMs, and cloud technologies.',
+  /** Without additional '/' on the end */
+  url: 'https://muizzbutt.com',
   type: 'website',
   robots: 'follow, index',
-  /**
-   * No need to be filled, will be populated with openGraph function
-   * If you wish to use a normal image, just specify the path below
-   */
-  image: 'https://henriqgoncalvs.com/images/open-graph.png',
+  image: 'https://muizzbutt.com/images/open-graph.png',
 };
 
 type SeoProps = {
@@ -62,8 +58,8 @@ export const Seo = (props: SeoProps) => {
       />
       {/* Twitter */}
       <meta name="twitter:card" content="app" />
-      <meta name="twitter:site" content="@henriqgoncalvs" />
-      <meta name="twitter:creator" content="@henriqgoncalvs" />
+      <meta name="twitter:site" content="@muizzbutt79" />
+      <meta name="twitter:creator" content="@muizzbutt79" />
       <meta name="twitter:title" content={meta.title} />
       <meta
         name="twitter:description"

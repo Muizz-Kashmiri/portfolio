@@ -16,16 +16,16 @@ const AboutPage = () => {
       <p className="text-xl font-semibold">About me</p>
 
       <div className="mt-10">
-        <p className="mb-5">Hey, I&apos;m Henrique 👋</p>
+        <p className="mb-5">Hey, I&apos;m Muizz 👋</p>
 
         <p className="mb-5">
-          I&apos;m a software engineer from Brazil with 4 years
-          of experience, currently working as a{' '}
+          I&apos;m a{' '}
           <span className="underline decoration-rose-100 decoration-wavy">
-            Frontend Engineer
+            Senior Software Engineer (ML/AI)
           </span>{' '}
-          at a fintech named PagBank and side projects. I&apos;m
-          also majoring in Software Engineering.
+          from Pakistan with 5+ years of experience, currently
+          working at Prodago where I build Agentic workflows, RAG systems and
+          manage backend architectures on Django and Azure.
         </p>
       </div>
 
@@ -33,33 +33,34 @@ const AboutPage = () => {
 
       <div>
         <p className="mb-5">
-          I&apos;m passionate about every kind of art, including
-          music, movies, HQ&apos;s, and of course,{' '}
+          I hold a Master&apos;s in Computer Science (Data
+          Science) from UET Lahore and a Bachelor&apos;s in IT
+          from University of Punjab. My work spans across{' '}
           <span className="underline decoration-rose-100 decoration-wavy">
-            coding
+            ML/AI, cloud infrastructure, and mobile development
           </span>
           .
         </p>
 
         <p className="mb-5">
-          This combination of interests is what keep me
-          interested in always learning something and creating
-          new projects. Is really awesome what we can do these
-          days with the internet and the tools we have available.
+          I&apos;ve worked with LLMs extensively from
+          implementing RLHF and supervised fine-tuning at
+          Turing, to building cloud-based MLOps pipelines at
+          Educative using AWS SageMaker and Terraform. Before
+          that, I spent over two years building Flutter apps and
+          CMS platforms at NativeSol.
         </p>
 
         <p className="mb-5">
-          It&apos;s been 4 years since I started working with
-          React and JavaScript. I&apos;m also a big fan of
-          TypeScript and Next.js. When I&apos;m not writing React
-          code, I&apos;m experimenting a lot writing Backend code
-          with Node and Go.
+          My current toolkit includes Python, Django, LangChain,
+          TensorFlow, PyTorch, AWS, Azure, Docker, and
+          Kubernetes. I also enjoy writing technical articles and
+          conducting workshops on Flutter development.
         </p>
 
         <p>
-          Following the steps of 92,5% of developers that I know,
-          I&apos;m also a musician. I play drums since I was 12
-          years old and guitar/bass for the past 2 years.
+          Outside of work, I enjoy reading philosophical
+          literature, playing chess, and working out regularly.
         </p>
       </div>
 

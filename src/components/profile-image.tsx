@@ -30,8 +30,8 @@ export const ProfileImage = ({
         })}
       >
         <Image
-          src="https://avatars.githubusercontent.com/u/25696006?v=4"
-          alt="A picture of Henrique"
+          src="/images/profile.jpeg"
+          alt="A picture of Muizz"
           priority
           className="rounded-full"
           width={size === 'sm' ? 40 : 96}

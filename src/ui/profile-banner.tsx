@@ -2,11 +2,10 @@ import clsx from 'clsx';
 import { useEffect, useRef } from 'react';
 import { AiFillGithub } from 'react-icons/ai';
 import { BiMap } from 'react-icons/bi';
-import { FaDrum, FaReact } from 'react-icons/fa';
+import { FaBrain, FaChess } from 'react-icons/fa';
 import { GoBook } from 'react-icons/go';
 import { GrLinkedinOption } from 'react-icons/gr';
 import { HiOutlineDocumentText } from 'react-icons/hi';
-import { MdOutlineCake } from 'react-icons/md';
 import { useIntersection } from 'react-use';
 
 import { Link } from '@/components/link';
@@ -50,10 +49,10 @@ export const ProfileBanner = () => {
             <ProfileImage />
             <h1 className="flex flex-col gap-1">
               <span className="text-3xl font-bold">
-                Henrique Gonçalves
+                Muizz Elahi Butt
               </span>
               <code className="font-mono text-base font-medium">
-                AKA @henriqgoncalvs
+                @Muizz-Kashmiri
               </code>
             </h1>
           </div>
@@ -85,14 +84,14 @@ export const ProfileBanner = () => {
             </Link>
 
             <Link
-              href="https://github.com/henriqgoncalvs"
+              href="https://github.com/Muizz-Kashmiri"
               external
               leftIcon={<AiFillGithub />}
               variant="icon-button"
             />
 
             <Link
-              href="https://www.linkedin.com/in/henriiqueg/"
+              href="https://www.linkedin.com/in/muizzbutt79/"
               external
               leftIcon={<GrLinkedinOption />}
               variant="icon-button"
@@ -101,14 +100,13 @@ export const ProfileBanner = () => {
         </div>
 
         <p className="text-base">
-          Healthily obsessed with designing and coding awesome
-          stuff. Ardent in music, movies, and improving
-          consistently through learning.
+          ML/AI Engineer building intelligent systems with
+          Python, LLMs, and cloud technologies. Passionate
+          about RAG systems, MLOps, and scalable architectures.
         </p>
         <p className="text-base">
-          Currently interested in React environment and
-          TypeScript. Experimenting Backend. Studying Software
-          Engineer.
+          Currently working with LangChain, Django, and AWS.
+          Experienced in Flutter and full-stack development.
         </p>
 
         <div
@@ -119,23 +117,18 @@ export const ProfileBanner = () => {
           )}
         >
           <div className="flex items-center gap-1">
-            <FaReact size={16} className="fill-rose-100/50" />
-            <span>Front end @ PagBank</span>
+            <FaBrain size={16} className="fill-rose-100/50" />
+            <span>Sr. SWE (ML/AI) @ Prodago</span>
           </div>
 
           <div className="flex items-center gap-1">
             <BiMap size={16} color="fill-rose-100/50" />
-            <span>Pernambuco - Brazil</span>
+            <span>Gujranwala, Pakistan</span>
           </div>
 
           <div className="flex items-center gap-1">
-            <MdOutlineCake size={16} color="fill-rose-100/50" />
-            <span>March 20th</span>
-          </div>
-
-          <div className="flex items-center gap-1">
-            <FaDrum size={16} color="fill-rose-100/50" />
-            <span>Drummer</span>
+            <FaChess size={16} color="fill-rose-100/50" />
+            <span>Chess Enthusiast</span>
           </div>
         </div>
       </div>
