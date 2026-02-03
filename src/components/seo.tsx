@@ -57,7 +57,7 @@ export const Seo = (props: SeoProps) => {
         content={meta.image}
       />
       {/* Twitter */}
-      <meta name="twitter:card" content="app" />
+      <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@muizzbutt79" />
       <meta name="twitter:creator" content="@muizzbutt79" />
       <meta name="twitter:title" content={meta.title} />
