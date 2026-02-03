@@ -94,8 +94,8 @@ const Footer = () => {
             <Link href="/about" variant="link">
               About
             </Link>
-            <Link href="/guestbook" variant="link">
-              Guestbook
+            <Link href="/contact" variant="link">
+              Contact
             </Link>
           </div>
 
@@ -126,7 +126,7 @@ const Footer = () => {
               )}
             >
               <BiMailSend size={20} />
-              Contact Me
+              Email Me
             </a>
           </div>
         </div>

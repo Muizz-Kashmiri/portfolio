@@ -1,8 +1,6 @@
-export type GuestbookMessage = {
-  id: string;
-  author: {
-    id: string;
-    name: string | null;
-  };
+// Contact form types
+export type ContactFormData = {
+  name: string;
+  email: string;
   message: string;
 };

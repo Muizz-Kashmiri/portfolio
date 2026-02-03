@@ -1,9 +1,9 @@
 import { AiFillGithub } from 'react-icons/ai';
-import { GoBook } from 'react-icons/go';
 import { GrLinkedinOption } from 'react-icons/gr';
 import {
   HiOutlineDocumentDownload,
   HiOutlineDocumentText,
+  HiOutlineMail,
 } from 'react-icons/hi';
 
 import { Link } from './link';
@@ -21,9 +21,9 @@ export const Navigation = () => {
         </span>
       </Link>
 
-      <Link href="/guestbook" leftIcon={<GoBook />} size="sm">
+      <Link href="/contact" leftIcon={<HiOutlineMail />} size="sm">
         <span className="transition-all duration-300 ease-out group-hover:text-rose-200">
-          Guestbook
+          Contact
         </span>
       </Link>
 

@@ -3,11 +3,11 @@ import { useEffect, useRef } from 'react';
 import { AiFillGithub } from 'react-icons/ai';
 import { BiMap } from 'react-icons/bi';
 import { FaBrain, FaChess } from 'react-icons/fa';
-import { GoBook } from 'react-icons/go';
 import { GrLinkedinOption } from 'react-icons/gr';
 import {
   HiOutlineDocumentDownload,
   HiOutlineDocumentText,
+  HiOutlineMail,
 } from 'react-icons/hi';
 import { useIntersection } from 'react-use';
 
@@ -75,12 +75,12 @@ export const ProfileBanner = () => {
             </Link>
 
             <Link
-              href="/guestbook"
-              leftIcon={<GoBook />}
+              href="/contact"
+              leftIcon={<HiOutlineMail />}
               size="sm"
             >
               <span className="transition-all duration-300 ease-out group-hover:text-rose-200">
-                Guestbook
+                Contact
               </span>
             </Link>
 
