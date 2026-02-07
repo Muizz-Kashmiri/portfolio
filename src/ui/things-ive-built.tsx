@@ -1,7 +1,5 @@
 import clsx from 'clsx';
 import Image from 'next/image';
-import NextLink from 'next/link';
-import { AiFillGithub } from 'react-icons/ai';
 import { FiExternalLink } from 'react-icons/fi';
 
 import { Link } from '@/components/link';
@@ -26,7 +24,6 @@ type ProjectCardProps = (typeof projects)[0];
 const ProjectCard = ({
   title,
   description,
-  gitLink,
   prodLink,
   techStack,
   thumb,
@@ -82,26 +79,6 @@ const ProjectCard = ({
           ))}
         </div>
       </div>
-
-      <NextLink
-        href={gitLink}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={clsx(
-          'group',
-          'absolute top-4 right-4 rounded-lg px-2 py-1'
-        )}
-      >
-        <AiFillGithub
-          size={28}
-          color="#ffe4e64d"
-          className={clsx(
-            'fill-rose-100/30',
-            'transition-all duration-300 ease-out',
-            'group-hover:scale-[1.2] group-hover:fill-white'
-          )}
-        />
-      </NextLink>
     </div>
   );
 };

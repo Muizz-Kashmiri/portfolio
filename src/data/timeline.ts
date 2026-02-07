@@ -10,7 +10,7 @@ const timeline: {
   {
     size: 'main',
     variant: 'work',
-    image: '/images/timeline/placeholder.png',
+    image: '/images/timeline/prodago-icon.svg',
     date: 'JUN 2024 - PRESENT',
     title: 'Senior Software Engineer (ML/AI) @ Prodago',
     description:
@@ -26,7 +26,7 @@ const timeline: {
   {
     size: 'main',
     variant: 'work',
-    image: '/images/timeline/placeholder.png',
+    image: '/images/timeline/turing.png',
     date: 'JUN 2023 - NOV 2025',
     title: 'LLM Trainer @ Turing (Part-time)',
     description:
@@ -34,15 +34,26 @@ const timeline: {
     tags: ['RLHF', 'LLMs', 'Fine-tuning', 'NLP'],
   },
   {
-    size: 'minimized',
-    date: '2024',
+    size: 'main',
+    variant: 'school',
+    image: '/images/timeline/uet-lahore.png',
+    date: '2022 - 2024',
     title:
-      'Completed Master of Computer Science from UET Lahore. CGPA: 3.5/4.0 (Bronze Medalist)',
+      'Master of Computer Science from UET Lahore',
+    description:
+      'Specialized in Machine Learning at University of Engineering and Technology, Lahore. CGPA: 3.5/4.0 (Bronze Medalist)',
+    tags: [
+      'Machine Learning',
+      'Deep Learning',
+      'NLP',
+      'Computer Vision',
+      'Research',
+    ],
   },
   {
     size: 'main',
     variant: 'work',
-    image: '/images/timeline/placeholder.png',
+    image: '/images/timeline/educative.png',
     date: 'MAY 2023 - JUN 2024',
     title: 'Software Engineer (Cloud ML) @ Educative',
     description:
@@ -56,17 +67,11 @@ const timeline: {
     ],
   },
   {
-    size: 'minimized',
-    date: '2022',
-    title:
-      'Started Master of Computer Science at UET Lahore (Machine Learning)',
-  },
-  {
     size: 'main',
     variant: 'work',
-    image: '/images/timeline/placeholder.png',
+    image: '/images/timeline/software-consultancy.svg',
     date: 'DEC 2020 - APR 2023',
-    title: 'Software Engineer (Flutter) @ NativeSol',
+    title: 'Software Engineer (Flutter) @ Software Consultancy',
     description:
       'Built 8 mobile applications and 3 CMS platforms across global markets. Mentored junior developers and improved code quality by 25%.',
     tags: [
@@ -77,18 +82,12 @@ const timeline: {
     ],
   },
   {
-    size: 'minimized',
-    date: '2021',
-    title:
-      'Completed Bachelor of IT from University of Punjab',
-  },
-  {
     size: 'main',
     variant: 'school',
-    image: '/images/timeline/placeholder.png',
-    date: '2017',
+    image: '/images/timeline/punjab-university.png',
+    date: '2017 - 2021',
     title:
-      'Started Bachelor of Information Technology at University of Punjab',
+      'Bachelor of Information Technology from University of Punjab',
     description:
       'Studied at the University of Punjab, Lahore. CGPA: 3.5/4.0',
     tags: [

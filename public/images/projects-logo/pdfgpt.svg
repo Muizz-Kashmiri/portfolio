@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" fill="none">
+  <rect width="200" height="200" rx="24" fill="#1e1e2e"/>
+  <defs>
+    <linearGradient id="pdfGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <!-- Document icon -->
+  <path d="M55 35h55l35 35v95c0 5.5-4.5 10-10 10H55c-5.5 0-10-4.5-10-10V45c0-5.5 4.5-10 10-10z" fill="#2a2a3e" stroke="url(#pdfGrad)" stroke-width="4"/>
+  <path d="M110 35v35h35" fill="none" stroke="url(#pdfGrad)" stroke-width="4" stroke-linecap="round"/>
+  <!-- PDF text -->
+  <text x="100" y="115" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="url(#pdfGrad)" text-anchor="middle">PDF</text>
+  <!-- AI sparkle -->
+  <circle cx="150" cy="50" r="8" fill="#fbbf24"/>
+  <path d="M150 38v24M138 50h24" stroke="#fbbf24" stroke-width="3" stroke-linecap="round"/>
+</svg>

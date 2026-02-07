@@ -20,7 +20,7 @@ const AboutPage = () => {
 
         <p className="mb-5">
           I&apos;m a{' '}
-          <span className="underline decoration-rose-100 decoration-wavy">
+          <span className="font-semibold text-rose-100">
             Senior Software Engineer (ML/AI)
           </span>{' '}
           from Pakistan with 5+ years of experience, currently
@@ -36,7 +36,7 @@ const AboutPage = () => {
           I hold a Master&apos;s in Computer Science (Data
           Science) from UET Lahore and a Bachelor&apos;s in IT
           from University of Punjab. My work spans across{' '}
-          <span className="underline decoration-rose-100 decoration-wavy">
+          <span className="font-semibold text-rose-100">
             ML/AI, cloud infrastructure, and mobile development
           </span>
           .
