@@ -6,7 +6,6 @@ import { FaBrain, FaChess } from 'react-icons/fa';
 import { GrLinkedinOption } from 'react-icons/gr';
 import {
   HiOutlineDocumentDownload,
-  HiOutlineDocumentText,
   HiOutlineMail,
 } from 'react-icons/hi';
 import { useIntersection } from 'react-use';
@@ -64,16 +63,6 @@ export const ProfileBanner = () => {
               'flex items-center space-x-3 self-end text-sm font-bold'
             )}
           >
-            <Link
-              href="/about"
-              leftIcon={<HiOutlineDocumentText />}
-              size="sm"
-            >
-              <span className="transition-all duration-300 ease-out group-hover:text-rose-200">
-                About
-              </span>
-            </Link>
-
             <Link
               href="/contact"
               leftIcon={<HiOutlineMail />}

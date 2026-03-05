@@ -36,7 +36,7 @@ Copy `.env.example` to `.env`. Required variables are validated at build time vi
 ### Routing & Pages
 Next.js Pages Router with file-based routing in `src/pages/`. Pages use a per-page layout pattern via `getLayout` on page components, consumed by `_app.tsx`.
 
-Routes: `/` (home), `/about`, `/guestbook`
+Routes: `/` (home), `/contact`
 
 ### tRPC (Type-Safe API)
 - **Client config**: `src/utils/api.ts` — creates typed React Query hooks via `createTRPCNext`

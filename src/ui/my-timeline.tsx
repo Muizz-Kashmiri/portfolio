@@ -5,11 +5,10 @@ import timeline from '@/data/timeline';
 
 export const MyTimeline = () => {
   return (
-    <section className="mt-10">
-      <p className="text-xl font-semibold">My timeline</p>
+    <section className="mt-10 px-4">
+      <p className="text-xl">My timeline</p>
 
-      <div className="mt-10">
-        <ul className="flex flex-col space-y-4">
+      <div className="mt-5 grid grid-cols-1 gap-2">
           {timeline.map((item: (typeof timeline)[0]) =>
             item.size === 'main' ? (
               <MainTimelineCard key={item.title} {...item} />
@@ -20,8 +19,7 @@ export const MyTimeline = () => {
               />
             )
           )}
-        </ul>
-      </div>
+        </div>
     </section>
   );
 };
@@ -44,7 +42,7 @@ const MainTimelineCard = ({
   return (
     <li
       className={clsx(
-        'relative rounded-lg border-[1px] border-none px-4 py-3',
+        'relative rounded-lg border-[1px] border-none p-4',
         'transition-all duration-500 ease-out',
         {
           'bg-rose-900/20 hover:bg-rose-900/30':
@@ -107,7 +105,7 @@ const MinimizedTimelineCard = ({
   return (
     <li
       className={clsx(
-        'relative rounded-lg border-[1px] border-none bg-white/5 px-4 py-3',
+        'relative rounded-lg border-[1px] border-none bg-white/5 p-4',
         'transition-all duration-500 ease-out',
         'hover:bg-white/10'
       )}

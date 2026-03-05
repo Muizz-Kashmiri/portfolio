@@ -91,9 +91,6 @@ const Footer = () => {
             <Link href="/" variant="link">
               Home
             </Link>
-            <Link href="/about" variant="link">
-              About
-            </Link>
             <Link href="/contact" variant="link">
               Contact
             </Link>

@@ -2,7 +2,6 @@ import { AiFillGithub } from 'react-icons/ai';
 import { GrLinkedinOption } from 'react-icons/gr';
 import {
   HiOutlineDocumentDownload,
-  HiOutlineDocumentText,
   HiOutlineMail,
 } from 'react-icons/hi';
 
@@ -11,16 +10,6 @@ import { Link } from './link';
 export const Navigation = () => {
   return (
     <div className="flex items-center space-x-2 text-base font-semibold leading-none text-rose-100/90 sm:space-x-5">
-      <Link
-        href="/about"
-        leftIcon={<HiOutlineDocumentText />}
-        size="sm"
-      >
-        <span className="transition-all duration-300 ease-out group-hover:text-rose-200">
-          About
-        </span>
-      </Link>
-
       <Link href="/contact" leftIcon={<HiOutlineMail />} size="sm">
         <span className="transition-all duration-300 ease-out group-hover:text-rose-200">
           Contact
