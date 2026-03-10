@@ -1,25 +1,54 @@
 import clsx from 'clsx';
 import Image from 'next/image';
+import { useState } from 'react';
 import { FiExternalLink } from 'react-icons/fi';
 
 import { Link } from '@/components/link';
 import { projects } from '@/data/projects';
 
+import { DetailModal } from './detail-modal';
+
+type ProjectItem = (typeof projects)[0];
+
 export const ThingsIveBuilt = () => {
+  const [selected, setSelected] =
+    useState<ProjectItem | null>(null);
+
   return (
     <section className="mt-10 px-4">
-      <p className="text-xl">Things I&apos;ve built</p>
+      <p className="text-xl">
+        Things I&apos;ve built
+      </p>
 
       <div className="mt-5 grid grid-cols-1 gap-2">
         {projects.map((project) => (
-          <ProjectCard key={project.title} {...project} />
+          <ProjectCard
+            key={project.title}
+            {...project}
+            onClick={() => setSelected(project)}
+          />
         ))}
       </div>
+
+      <DetailModal
+        isOpen={selected !== null}
+        onClose={() => setSelected(null)}
+        image={selected?.thumb}
+        title={selected?.title ?? ''}
+        subtitle={selected?.description}
+        details={selected?.details}
+        tags={selected?.techStack}
+        variant="project"
+        links={selected?.links}
+        images={selected?.images}
+      />
     </section>
   );
 };
 
-type ProjectCardProps = (typeof projects)[0];
+type ProjectCardProps = ProjectItem & {
+  onClick: () => void;
+};
 
 const ProjectCard = ({
   title,
@@ -27,34 +56,27 @@ const ProjectCard = ({
   prodLink,
   techStack,
   thumb,
+  onClick,
 }: ProjectCardProps) => {
   return (
     <div
+      role="button"
+      tabIndex={0}
+      onClick={onClick}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          onClick();
+        }
+      }}
       className={clsx(
-        'relative rounded-lg border-[1px] border-none bg-white/5 p-4',
+        'relative cursor-pointer rounded-lg border-[1px] border-none bg-white/5 p-4',
         'transition-all duration-500 ease-out',
         'hover:bg-white/10'
       )}
     >
       <div className="flex flex-col space-y-3">
-        {prodLink ? (
-          <Link
-            href={prodLink}
-            external
-            rightIcon={<FiExternalLink size={22} />}
-            size="lg"
-            className="w-fit font-semibold"
-          >
-            <Image
-              src={thumb}
-              alt={`${title} logo`}
-              width="32"
-              height="32"
-              className="rounded-md"
-            />
-            <span>{title}</span>
-          </Link>
-        ) : (
+        <div className="flex items-center justify-between">
           <p className="group flex w-fit items-center gap-2 text-lg font-semibold">
             <Image
               src={thumb}
@@ -65,7 +87,24 @@ const ProjectCard = ({
             />
             <span>{title}</span>
           </p>
-        )}
+
+          {prodLink && (
+            <Link
+              href={prodLink}
+              external
+              rightIcon={
+                <FiExternalLink size={22} />
+              }
+              size="sm"
+              className="z-10"
+              onClick={(e: React.MouseEvent) =>
+                e.stopPropagation()
+              }
+            >
+              Visit
+            </Link>
+          )}
+        </div>
         <p className="text-base">{description}</p>
 
         <div className="flex flex-wrap items-center">

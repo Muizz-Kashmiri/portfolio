@@ -5,6 +5,9 @@ type Project = {
   prodLink?: string;
   techStack: string[];
   thumb: string;
+  details?: string[];
+  links?: { label: string; url: string }[];
+  images?: string[];
 };
 
 export const projects: Project[] = [
@@ -21,6 +24,13 @@ export const projects: Project[] = [
       'Agentic AI',
     ],
     thumb: '/images/projects-logo/primerise.svg',
+    details: [
+      'Designed multi-agent pipeline orchestrating content generation',
+      'Integrated LangChain agents with Django REST backend',
+      'Deployed on Azure with auto-scaling',
+      'Reduced content production time by 80%',
+      'Built admin dashboard for workflow monitoring',
+    ],
   },
   {
     title: 'AWS Cloud Labs',
@@ -35,6 +45,13 @@ export const projects: Project[] = [
       'Python',
     ],
     thumb: '/images/projects-logo/educative.png',
+    details: [
+      'Architected 10 hands-on labs for AWS microservices',
+      'Built MLOps pipelines with SageMaker for model training/deployment',
+      'Automated infrastructure with Terraform modules',
+      'Containerized lab environments with Docker',
+      'Wrote step-by-step technical guides',
+    ],
   },
   {
     title: 'Gift University LMS',
@@ -48,6 +65,13 @@ export const projects: Project[] = [
       'REST API',
     ],
     thumb: '/images/projects-logo/gift-university.png',
+    details: [
+      'Redesigned university website from scratch',
+      'Built cross-platform mobile LMS in Flutter',
+      'Integrated Firebase for real-time notifications',
+      'Achieved 35% increase in user engagement',
+      'Implemented offline-first architecture',
+    ],
   },
   {
     title: 'The Leather Point CMS',
@@ -61,6 +85,13 @@ export const projects: Project[] = [
       'CMS',
     ],
     thumb: '/images/projects-logo/leather-point.png',
+    details: [
+      'Built custom CMS managing products across 20+ retail outlets',
+      'Real-time inventory sync with Firebase',
+      'Role-based access for store managers',
+      'Automated promotional content scheduling',
+      'Responsive Flutter web + mobile app',
+    ],
   },
   {
     title: 'PdfGPT',
@@ -75,5 +106,12 @@ export const projects: Project[] = [
       'RAG',
     ],
     thumb: '/images/projects-logo/pdfgpt.svg',
+    details: [
+      'Fine-tuned Mistral 7B with custom dataset for document QA',
+      'Built RAG pipeline with LangChain for context retrieval',
+      'Implemented chunking strategies for large PDFs',
+      'Created clean chat UI for document interaction',
+      'Optimized inference for low-latency responses',
+    ],
   },
 ];
